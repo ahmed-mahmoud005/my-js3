@@ -1,0 +1,249 @@
+*{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.first{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    gap: 30px;
+    background-color: rgb(65, 65, 66);
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+    width: 200px;
+    background-color: #fff;
+    padding: 10px ;
+    border-radius: 15px;
+}
+.input h2{
+    font-size: 32px;
+}
+.input input{
+    padding: 5px;
+    outline: none;
+}
+.input button{
+    padding: 5px;
+    background-color: #7b13d1;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    align-items: flex-start;
+    height: 150px;
+}
+.boxes .box{
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 150px;
+}
+.boxes .box h3{
+    font-size: 25px;
+    text-align: center;
+}
+.boxes .box .item{
+    background-color: #7b13d1;
+    margin: 4px;
+    padding: 5px;
+    cursor: move;
+}
+
+.second{
+    height: 100vh;
+    background-color: #717172;
+    width: 100%;
+    position: relative;
+}
+.second .container2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 3px solid blue;
+    padding: 25px;
+    border-radius: 15px;
+}
+.second .input2{
+    width: 250px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 7px;
+}
+.second .input2 input{
+    height: 20px;
+    width: 70%;
+    outline: none;
+    border-radius: 15px;
+    padding: 10px;
+    color: #7b13d1;
+    border: 1px solid rgb(22, 62, 134);
+}
+.second .input2 button{
+    height: 40px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    background-color: #55266b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.second .new{
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 7px;
+}
+.second .new .sub-new{
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #bbb9b9;
+    border-radius: 10px;
+    padding: 5px;
+    border-bottom: 1px solid rgb(83, 83, 83);
+    box-shadow: 1px 1px 5px 1px rgb(13, 13, 17);
+    margin-top: 15px;
+    transition: 0.3s;
+}
+.second .sub-new:hover{
+    transform: translateY(-2px);
+}
+.second .sub-new p{
+    color: black;
+    font-weight: 500;
+    padding: 0 5px;
+    cursor: pointer;
+}
+.second .sub-new button{
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    background-color: #55266b;
+    outline: none;
+    border: none;
+    color: #bbb9b9;
+    cursor: pointer;
+}
+.lis{
+    text-decoration: line-through;
+}
+
+.game{
+    height: 100vh;
+    width: 100%;
+    background-color: #4e4b53;
+    position: relative;
+}
+.game .g-h{
+    background-color: #7b13d1;
+    width: 60%;
+    height: 50px;
+    margin:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 500;
+    position: relative;
+    top: 10%;
+}
+.game .g-h span{
+    margin-right: 30px;
+    color: rgb(201, 201, 4);
+}
+.game .m-squa{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3,150px);
+    position: relative;
+    top: 20%;
+    justify-content: center;
+}
+.game .squa{
+    height: 100px;
+    width: 100px;
+    background-color: #7b13d1;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    font-weight: 700;
+    color: #08034b;
+    transition: 0.1s;
+    cursor: pointer;
+}
+.game .squa:hover{
+    background-color: black;
+    color: aliceblue;
+}
+
+.random{
+    height: 100vh;
+    width: 100%;
+    background-color: #6a696b;
+    position: relative;
+}
+.random .sub-random{
+    position: absolute;
+    min-width: 400px;
+    background-color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    transition: 0.4s;
+}
+.sub-random .hap{
+    font-size: 120px;
+    color: yellow;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.sub-random p{
+    color: #fff;
+    padding: 20px;
+    transform: translateY(20px);
+    height: 150px;
+    text-align: center;
+}
+
+.hed{
+    opacity: 1;
+    transition: opacity 0.3s ;
+}
+.sub-random button{
+    position: relative;
+    left: 30%;
+    top: 10%;
+    padding: 15px 20px;
+    border: none;
+    margin-bottom: 10px;
+    outline: none;
+    background-color: yellow;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+}
